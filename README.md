@@ -1,10 +1,10 @@
-# JPN225 12h OHLCV Stock index Historical Data — Free Sample
+# JPN225 12h OHLCV Index Historical Data — Free Sample
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![Dataset rows](https://img.shields.io/badge/full_dataset-9_719_rows-blue)](https://getdata.finance/datasets/jpn225) [![Updated](https://img.shields.io/badge/weekly_update-every_Saturday_8am_UTC-green)](https://getdata.finance) [![Full data on getdata.finance](https://img.shields.io/badge/download-getdata.finance-orange)](https://getdata.finance/datasets/jpn225)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![Dataset rows](https://img.shields.io/badge/full_dataset-9_982_rows-blue)](https://getdata.finance/datasets/jpn225) [![Updated](https://img.shields.io/badge/weekly_update-every_Saturday_8am_UTC-green)](https://getdata.finance) [![Full data on getdata.finance](https://img.shields.io/badge/download-getdata.finance-orange)](https://getdata.finance/datasets/jpn225)
 
 ### -> [**Download the full JPN225 dataset on getdata.finance**](https://getdata.finance/datasets/jpn225)
 
-**JPN225 12h OHLCV stock index historical data** — ultra high-quality 12h OHLCV for **Japan 225 (Nikkei)**. Global cash and extended index sessions — Asia, Europe and US coverage, not US-hours only. Clean `datetime, open, high, low, close, volume` CSV for backtesting, algorithmic trading and quantitative research.
+**JPN225 12h OHLCV index historical data** — ultra high-quality 12h OHLCV for **Nikkei 225**. Clean `time, open, high, low, close, volume` CSV for backtesting, algorithmic trading and quantitative research.
 
 ## Table of contents
 
@@ -21,14 +21,13 @@
 
 ## Why this dataset?
 
-- **Ultra high-quality 12h OHLCV** for **Japan 225 (Nikkei)** (Stock index)
-- **Global cash and extended index sessions — Asia, Europe and US coverage, not US-hours only**
-- **Clean CSV schema** — `datetime, open, high, low, close, volume` (no gaps in formatting)
-- **Free evaluation sample** on GitHub (`12h`) · **11 timeframes** on [getdata.finance](https://getdata.finance/datasets/jpn225) · **9,719** `1m` rows in the full archive
+- **Ultra high-quality 12h OHLCV** for **Nikkei 225** (Index)
+- **Clean CSV schema** — `time, open, high, low, close, volume` (no gaps in formatting)
+- **Free evaluation sample** on GitHub (`12h`) · **11 timeframes** on [getdata.finance](https://getdata.finance/datasets/jpn225) · **9,982** `12h` rows in the full archive
 - Built for **backtesting**, **algorithmic trading** and **quantitative finance** workflows
 - **Weekly refresh** — [getdata.finance](https://getdata.finance) every **Saturday, 8am UTC+0**; GitHub `12h` sample updated in sync
 
-> **Sample on GitHub** · `JPN225_12h.csv` (573 rows, `2025-07-30` -> `2026-07-31`). **Full archive on [getdata.finance](https://getdata.finance/datasets/jpn225)** — **9,719** `1m` rows (~0.70 MB), **11 timeframes** (1m · 3m · 5m · 15m · 30m · 1H · 4H · 12H · 1D · 3D · 1W), `2008-09-01` -> `2026-07-31`.
+> **Sample on GitHub** · `JPN225_12h.csv` (90 rows, `2026-07-07` -> `2026-09-02`, 6.10 KB). **Full archive on [getdata.finance](https://getdata.finance/datasets/jpn225)** — **9,982** `12h` rows (full `1m`: 5,192,657), **11 timeframes**, `2008-08-31` -> `2026-09-02`.
 
 ## Download sample
 
@@ -44,11 +43,11 @@ Full archive & live chart on getdata.finance: **[https://getdata.finance/dataset
 
 | | **Sample (this repo)** | **Full dataset ([getdata.finance](https://getdata.finance/datasets/jpn225))** |
 |---|--:|---|
-| Instrument | Japan 225 (Nikkei) · Stock index | Japan 225 (Nikkei) · Stock index |
+| Instrument | Nikkei 225 · Index | Nikkei 225 · Index |
 | Timeframes | `12h` (sample) | **11** — 1m · 3m · 5m · 15m · 30m · 1H · 4H · 12H · 1D · 3D · 1W |
-| 1m rows | 573 | **9,719** |
-| Size | 0.04 MB | ~0.70 MB |
-| Period | `2025-07-30` -> `2026-07-31` | `2008-09-01` -> `2026-07-31` |
+| 12h rows | 90 | **9,982** |
+| Size | 6.10 KB | full ZIP on [getdata.finance](https://getdata.finance/datasets/jpn225) |
+| Period | `2026-07-07` -> `2026-09-02` | `2008-08-31` -> `2026-09-02` |
 | File | `JPN225_12h.csv` | ZIP on [getdata.finance](https://getdata.finance/datasets/jpn225) |
 | Coverage report | — | [JPN225 coverage](https://getdata.finance/coverage/jpn225) |
 | Updates | Weekly (Saturday, 8am UTC+0) — GitHub sample | Weekly (Saturday, 8am UTC+0) — all timeframes |
@@ -57,7 +56,7 @@ Full archive & live chart on getdata.finance: **[https://getdata.finance/dataset
 
 This GitHub repository ships a **`12h` evaluation sample** only. On **[getdata.finance](https://getdata.finance/datasets/jpn225)**, each full asset archive is delivered as a ZIP with **11 gap-free OHLCV timeframes** (one CSV per timeframe):
 
-**1m** · **3m** · **5m** · **15m** · **30m** · **1H** · **4H** · **12H** · **1D** · **3D** · **1W**
+**1m · 3m · 5m · 15m · 30m · 1H · 4H · 12H · 1D · 3D · 1W**
 
 GitHub = `12h` sample · [getdata.finance](https://getdata.finance/datasets/jpn225) = all **11** timeframes above for the same instrument.
 
@@ -74,29 +73,29 @@ First and latest rows from the GitHub sample **`JPN225_12h.csv`**:
 
 **First rows**
 
-| datetime | open | high | low | close | volume |
+| time | open | high | low | close | volume |
 | --- | --- | --- | --- | --- | --- |
-| 2025-07-30T12:00:00+00:00 | 40785.19 | 40895.78 | 40522.68 | 40773.27 | 24792.0990896359 |
-| 2025-07-31T00:00:00+00:00 | 40773.27 | 41320.78 | 40730.76 | 41170.76 | 16889.4073410922 |
-| 2025-07-31T12:00:00+00:00 | 41170.76 | 41245.76 | 40608.26 | 40748.69 | 30377 |
-| 2025-08-01T00:00:00+00:00 | 40748.69 | 41041.18 | 40468.67 | 40553.69 | 25375 |
-| 2025-08-01T12:00:00+00:00 | 40553.69 | 40553.69 | 39773.67 | 39993.67 | 46613.3120072771 |
+| 2026-07-07T12:00:00+00:00 | 68136.97 | 68550.82 | 67071.32 | 67916.33 | 115584 |
+| 2026-07-08T00:00:00+00:00 | 67916.33 | 68465.83 | 65418.31 | 67210.83 | 128753 |
+| 2026-07-08T12:00:00+00:00 | 67210.83 | 68525.15 | 66606.31 | 67935.67 | 103283 |
+| 2026-07-09T00:00:00+00:00 | 67935.67 | 68935.16 | 67462.65 | 68885.16 | 79946 |
+| 2026-07-09T12:00:00+00:00 | 68885.16 | 69485.39 | 68412.65 | 69335.88 | 43667 |
 
 **Last rows**
 
-| datetime | open | high | low | close | volume |
+| time | open | high | low | close | volume |
 | --- | --- | --- | --- | --- | --- |
-| 2026-07-29T12:00:00+00:00 | 62816.38 | 63071.39 | 60896.88 | 61542.12 | 154148.9438289101 |
-| 2026-07-30T00:00:00+00:00 | 61542.12 | 62999.11 | 61317.11 | 62647.61 | 184495 |
-| 2026-07-30T12:00:00+00:00 | 62647.61 | 64487.38 | 62487.61 | 64287.88 | 87562 |
-| 2026-07-31T00:00:00+00:00 | 64287.88 | 65512.4 | 63532.88 | 64047.89 | 112790 |
-| 2026-07-31T12:00:00+00:00 | 64047.89 | 64132.39 | 62652.88 | 63057.4 | 116254 |
+| 2026-08-31T00:00:00+00:00 | 65163.4 | 66492.92 | 65128.4 | 66247.92 | 45931 |
+| 2026-08-31T12:00:00+00:00 | 66247.92 | 66410.23 | 65550.22 | 66145.22 | 45923 |
+| 2026-09-01T00:00:00+00:00 | 66145.22 | 66529.73 | 64884.71 | 65055.22 | 49604 |
+| 2026-09-01T12:00:00+00:00 | 65055.22 | 65609.73 | 64226.51 | 64291.5 | 45278 |
+| 2026-09-02T00:00:00+00:00 | 64291.5 | 64291.5 | 64257 | 64261.49 | 17 |
 
 ## Schema
 
 | Column | Description |
 | --- | --- |
-| `datetime` | Bar open timestamp (UTC, ISO-8601). |
+| `time` | Bar open timestamp (UTC, ISO-8601). |
 | `open` | Opening price of the candlestick bar. |
 | `high` | Highest price during the bar. |
 | `low` | Lowest price during the bar. |
@@ -104,7 +103,7 @@ First and latest rows from the GitHub sample **`JPN225_12h.csv`**:
 | `volume` | Tick volume (number of price updates) during the bar. |
 
 ```text
-datetime,open,high,low,close,volume
+time,open,high,low,close,volume
 ```
 
 ## Code examples
@@ -114,11 +113,9 @@ datetime,open,high,low,close,volume
 ```python
 import pandas as pd
 
-df = pd.read_csv('JPN225_12h.csv', parse_dates=['datetime'])
-df.set_index('datetime', inplace=True)
+df = pd.read_csv('JPN225_12h.csv', parse_dates=['time'])
+df.set_index('time', inplace=True)
 print(df.describe())
-print(df.resample('1h').agg({'open': 'first', 'high': 'max',
-                              'low': 'min', 'close': 'last', 'volume': 'sum'}).head())
 ```
 
 ### backtrader
@@ -127,8 +124,8 @@ print(df.resample('1h').agg({'open': 'first', 'high': 'max',
 import backtrader as bt
 import pandas as pd
 
-df = pd.read_csv('JPN225_12h.csv', parse_dates=['datetime'])
-df.set_index('datetime', inplace=True)
+df = pd.read_csv('JPN225_12h.csv', parse_dates=['time'])
+df.set_index('time', inplace=True)
 
 class PandasData(bt.feeds.PandasData):
     params = (('datetime', None), ('open', 'open'), ('high', 'high'),
@@ -146,20 +143,20 @@ cerebro.adddata(PandasData(dataname=df))
 import pandas as pd
 import vectorbt as vbt
 
-df = pd.read_csv('JPN225_12h.csv', parse_dates=['datetime'])
-close = df.set_index('datetime')['close']
+df = pd.read_csv('JPN225_12h.csv', parse_dates=['time'])
+close = df.set_index('time')['close']
 fast, slow = vbt.MA.run(close, 10), vbt.MA.run(close, 50)
 entries = fast.ma_crossed_above(slow)
 exits = fast.ma_crossed_below(slow)
-pf = vbt.Portfolio.from_signals(close, entries, exits, init_cash=10_000, freq='1min')
+pf = vbt.Portfolio.from_signals(close, entries, exits, init_cash=10_000, freq='12h')
 print(pf.stats())
 ```
 
 ## Download full data
 
-The complete **JPN225** archive on **[getdata.finance](https://getdata.finance/datasets/jpn225)** includes **11 OHLCV timeframes** (1m · 3m · 5m · 15m · 30m · 1H · 4H · 12H · 1D · 3D · 1W) — **9,719** rows at `1m`, plus all other timeframes in the same ZIP.
+The complete **JPN225** archive on **[getdata.finance](https://getdata.finance/datasets/jpn225)** includes **11 OHLCV timeframes** (1m · 3m · 5m · 15m · 30m · 1H · 4H · 12H · 1D · 3D · 1W) — **9,982** rows at `12h`, plus all other timeframes in the same ZIP.
 
 **[-> Get the full JPN225 dataset on getdata.finance](https://getdata.finance/datasets/jpn225)**
 
 ---
-*GetData · JPN225 12h OHLCV sample on GitHub · Full historical data on [getdata.finance](https://getdata.finance/datasets/jpn225) · 2026-08-05 UTC*
+*GetData · JPN225 12h OHLCV sample on GitHub · Full historical data on [getdata.finance](https://getdata.finance/datasets/jpn225)*
